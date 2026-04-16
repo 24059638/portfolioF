@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Mudzanani Mutshinye Rainah — BSc Computer Science student at University of Venda. Aspiring Staff Software Engineer. Explore projects: Simple Calculator, Guessing Game.">
+  <meta name="keywords" content="Mudzanani Mutshinye Rainah, Computer Science, University of Venda, portfolio, calculator, guessing game, software engineer, Limpopo">
+  <meta name="author" content="Mudzanani Mutshinye Rainah">
+  <meta name="theme-color" content="#0a192f">
+  <title>Rainah · CS Student & Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Main Stylesheet (kept for existing styles) -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Embedded style to guarantee square images and cohesive look -->
+  <style>
+    /* Ensure images are square with consistent sizing */
+    .profile-img,
+    .about-img {
+      width: 100%;
+      height: 100%;
+      max-width: 280px;        /* comfortable square size */
+      aspect-ratio: 1 / 1;      /* forces square shape */
+      object-fit: cover;        /* fills square without distortion */
+      border-radius: 20px;      /* modern rounded square, not circle */
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+      border: 2px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.25s ease;
+    }
+    .profile-img:hover,
+    .about-img:hover {
+      transform: scale(1.02);
+    }
+    
+    /* Container adjustments to keep square centered */
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-inline-img {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 24px 0;
+    }
+    
+    /* For small screens, keep square proportional */
+    @media (max-width: 600px) {
+      .profile-img,
+      .about-img {
+        max-width: 220px;
+      }
+    }
+    
+    /* Optional: if style.css applies border-radius: 50%, override */
+    .profile-img,
+    .about-img {
+      border-radius: 20px !important;  /* gentle square, not circular */
+    }
+    
+    /* About grid layout tweak to accommodate square image */
+    .about-grid {
+      align-items: start;
+    }
+    
+    /* Additional polish for project cards & contact — keep consistent */
+    .project-card {
+      transition: all 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-code"></i> 
+      <span>Rainah.M</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section id="home">
+    <div class="container hero">
+      <div class="hero-image fade-up">
+        <img src="Face.jpeg" alt="Mudzanani Mutshinye Rainah - profile" class="profile-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1f4f8a/white?text=Mudzanani+Rainah';">
+      </div>
+      <div class="hero-content fade-up">
+        <div class="hero-badge"><i class="fas fa-graduation-cap"></i> BSc Computer Science · Second Level</div>
+        <h1>Mudzanani <span class="hero-highlight">Mutshinye Rainah</span></h1>
+        <p class="hero-desc">
+          Aspiring Staff Software Engineer & creative problem solver. I build clean, scalable systems — currently exploring large‑scale architecture and mentoring.
+        </p>
+        <div class="education-chip">
+          <i class="fas fa-university"></i> University of Venda
+          <span style="margin:0 8px">•</span> <i class="fas fa-map-pin"></i> South Africa, Limpopo, Thohoyandou
+        </div>
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Connect</a>
+          <a href="https://wa.me/27760138744?text=Hello%20Rainah%2C%20I%20saw%20your%20portfolio!" class="btn btn-wa" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://github.com/24059638" class="btn btn-gh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-up"><i class="fas fa-user-astronaut"></i> Education & journey</h2>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <div class="about-inline-img">
+            <img src="Abt.jpeg" alt="Mudzanani Mutshinye Rainah at university" class="about-img" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/300x300/2c7be5/white?text=Rainah';">
+          </div>
+          <p style="font-size: 1.15rem; margin-bottom: 18px;"><strong>👩🏽‍💻 Mudzanani Mutshinye Rainah</strong> — BSc Computer Science at the <strong>University of Venda</strong>. Second‑year student with a clear vision: to become a staff‑level software engineer leading architectural design for large‑scale distributed systems.</p>
+          <div class="uni-highlight">
+            <i class="fas fa-chalkboard-user"></i> 
+            <strong>🎓 University of Venda</strong> · Second Level (BSc CS)<br>
+            <span style="font-size: 0.95rem; color: #bed9ff;">Coursework: Data Structures, Web Dev, Software Engineering, Databases, Distributed Systems.</span>
+          </div>
+          <p style="margin-top: 20px;">✨ <strong>Career goal:</strong> Staff‑level software engineer — leading architectural design, mentoring juniors, and aligning technical decisions with business impact.</p>
+          <p>🌱 Currently strengthening system design, cloud patterns, and backend scalability. Active in study groups and peer mentoring.</p>
+        </div>
+        <div class="skills-wrapper fade-up" id="skills">
+          <h3 style="font-size: 2rem; margin-bottom: 1.8rem; color: #e0edff;"><i class="fas fa-microchip"></i> tech stack</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+            <span class="skill-tag"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+            <span class="skill-tag"><i class="fab fa-react"></i> React (learning)</span>
+            <span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> SQL / PostgreSQL</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+            <span class="skill-tag"><i class="fas fa-cloud"></i> REST APIs</span>
+            <span class="skill-tag"><i class="fas fa-project-diagram"></i> System Design</span>
+            <span class="skill-tag"><i class="fas fa-users"></i> Mentoring</span>
+          </div>
+          <div class="focus-card">
+            <p><i class="fas fa-cubes"></i> <strong>Focus:</strong> scalable architecture, clean code, and building systems that empower teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title fade-up"><i class="fas fa-rocket"></i> featured projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1: Simple Calculator with Netlify -->
+        <div class="project-card fade-up">
+          <div class="project-icon"><i class="fas fa-calculator"></i></div>
+          <h3>Simple Calculator</h3>
+          <p class="project-desc">A clean, responsive calculator that handles basic arithmetic. Built with vanilla JavaScript, CSS Grid, and keyboard support. Deployed live.</p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Netlify</span>
+          </div>
+          <div class="project-links">
+            <a href="https://roaring-dolphin-1feff3.netlify.app" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> live demo</a>
+            <a href="https://github.com/24059638" target="_blank"><i class="fab fa-github"></i> repo</a>
+          </div>
+        </div>
+        
+        <!-- Project 2: Guessing Game (in progress) -->
+        <div class="project-card fade-up">
+          <div class="project-icon"><i class="fas fa-question-circle"></i></div>
+          <h3>Guessing Game <span class="progress-badge"><i class="fas fa-spinner fa-pulse"></i> in progress</span></h3>
+          <p class="project-desc">An interactive number‑guessing game with hints, score tracking, and difficulty levels. Smooth UI/UX with local storage.</p>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">CSS animations</span>
+            <span class="tech-badge">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="disabled-link" onclick="return false;"><i class="fas fa-code-branch"></i> coming soon</a>
+            <a href="https://github.com/24059638" target="_blank"><i class="fab fa-github"></i> dev branch</a>
+          </div>
+        </div>
+      </div>
+      
+      <p class="more-projects">
+        <i class="fas fa-arrow-right"></i> More experiments on <a href="https://github.com/24059638" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title fade-up"><i class="fas fa-address-card"></i> connect with Me</h2>
+      <div class="contact-card fade-up">
+        <i class="fas fa-comment-dots contact-main-icon"></i>
+        <h3>Let's build something meaningful</h3>
+        <p class="contact-sub">Email, WhatsApp, or request my CV — I'm just a message away.</p>
+        
+        <div class="contact-email-box">
+          <span><i class="fas fa-envelope"></i> rainahmudzanani@gmail.com</span>
+          <button class="copy-btn" id="copyEmailBtn"><i class="far fa-copy"></i> Copy</button>
+        </div>
+        
+        <div class="contact-wa-box">
+          <span><i class="fab fa-whatsapp wa-icon"></i> +27 76 013 8744</span>
+          <a href="https://wa.me/27760138744?text=Hi%20Rainah%2C%20I%20visited%20your%20portfolio!" target="_blank" class="wa-chat-btn" rel="noopener"><i class="fab fa-whatsapp"></i> Chat now</a>
+          <button class="copy-btn" id="copyPhoneBtn"><i class="far fa-copy"></i> number</button>
+        </div>
+        
+        <div class="contact-action-buttons">
+          <a href="mailto:rainahmudzanani@gmail.com?subject=Connecting%20from%20portfolio" class="contact-btn"><i class="fas fa-paper-plane"></i> Send email</a>
+          <a href="mailto:rainahmudzanani@gmail.com?subject=CV%20Request%20from%20Portfolio&body=Hi%20Rainah,%20I'd%20love%20to%20see%20your%20CV." class="contact-btn secondary"><i class="fas fa-file-alt"></i> Request CV</a>
+        </div>
+        
+        <div class="social-icons">
+          <a href="https://github.com/24059638" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mudzanani-mutshinye-8a10a2404/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/27760138744" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> University of Venda · Thohoyandou, Limpopo</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Mudzanani Mutshinye Rainah — BSc Computer Science @ University of Venda</p>
+    <p class="footer-heart">crafted with <i class="fas fa-heart"></i> , curiosity & code</p>
+  </div>
+</footer>
+
+<!-- back to top + toast -->
+<div class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></div>
+<div class="toast-msg" id="liveToast">📋 Copied to clipboard</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
